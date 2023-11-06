@@ -68,7 +68,7 @@ function Footer() {
               <div className="col-md-7 col-lg-8 text-center text-md-start">
                 <div className="p-3">
                   © 2023 Copyright:
-                  <a className="text-white" href="https://caossoft.com/"> CAO's Soft.com</a>
+                  <a className="text-white" href="https://caossoft.com/"> caossoft.com</a>
                 </div>
               </div>
 

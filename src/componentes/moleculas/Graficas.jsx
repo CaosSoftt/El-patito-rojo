@@ -110,7 +110,7 @@ function calcularN(datos) {
 function Graficas() {
   const [loading, setLoading] = useState(true);
   const datos = [
-    23.3, 31.3, 12.1, 29, 28, 25.5, 22.3, 22.2, 34, 23.3, 25.6, 23.9, 21.1, 21,
+    23.3, 31.3, 12.1, 29, 28, 25.5, 22.3, 22.2, 34, 23.3, 25.6, 23.9, 21.1, 20,
     27, 25.5, 25.5, 29, 30, 34,
   ].map((valor) => parseFloat(valor));
   const media = calcularMedia(datos);
