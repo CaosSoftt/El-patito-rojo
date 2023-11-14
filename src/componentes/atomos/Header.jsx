@@ -34,17 +34,17 @@ const Header = () => {
             </a>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link " href="/">
+                <a className="nav-link " href="/dashboard">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/dashboard">
                   Graficas
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/about">
                   acerca de
                 </a>
               </li>
@@ -76,12 +76,12 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/login">
+                  <a className="dropdown-item" href="/">
                     Cerrar sesion
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="/login">
+                  <a className="dropdown-item" href="/">
                     Login
                   </a>
                 </li>
