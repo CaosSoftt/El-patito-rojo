@@ -1,4 +1,5 @@
 import React from "react";
+import "../../assets/styles/barra.css"
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,} from "recharts";
 
 const BarChartComponent = () => {
@@ -11,7 +12,7 @@ const BarChartComponent = () => {
   ];
 
   return (
-    <ResponsiveContainer width={900} height={500}>
+    <ResponsiveContainer>
       <BarChart
         data={data}
         margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
