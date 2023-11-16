@@ -53,7 +53,7 @@ function Footer() {
 
               <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                 <h6 className="text-uppercase mb-4 font-weight-bold">Contacto</h6>
-                <p><i className="fas fa-home mr-3"></i> Suchiapa York, Chiapas 20120, Mx</p>
+                <p><i className="fas fa-home mr-3"></i> Suchiapa, Chiapas 20120, Mx</p>
                 <p><i className="fas fa-envelope mr-3"></i> infocodelabs@gmail.com</p>
                 <p><i className="fas fa-phone mr-3"></i> + 52 965 107 3435</p>
                 <p><i className="fas fa-phone mr-3"></i> + 52 961 558 5227</p>

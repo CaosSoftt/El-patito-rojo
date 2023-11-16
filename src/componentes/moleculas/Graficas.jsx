@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactApexChart from "react-apexcharts";
-import '../../assets/styles/Tabla.css';
+import Home from "../../assets/images/home.png";
+import "../../assets/styles/Tabla.css";
 
 function calcularMedia(datos) {
   const suma = datos.reduce((acc, valor) => acc + valor, 0);
@@ -158,33 +159,36 @@ function Graficas() {
 
   return (
     <>
+      <div className="contenedor-q">
+        <img src={Home} alt="caos" className="imagen-pollo" />
+      </div>
       <div className="row">
         <center>
-        <div className="col-md-7 col-sm-12 mt-9">
-          <div className="card text-center">
-            <div className="card-header">Gráfica de pastel</div>
-            <div className="card-body">
-              <div className="text-center">
-                {loading ? (
-                  <div className="cardcititita d-flex justify-content-center align-items-center">
-                    <div className="cardcititita_skeleton cardcititita_title"></div>
-                  </div>
-                ) : (
-                  <div id="chart">
-                    <ReactApexChart
-                      options={chartData.options}
-                      series={chartData.series}
-                      type="pie"
-                    />
-                  </div>
-                )}
+          <div className="col-md-7 col-sm-12 mt-9">
+            <div className="card text-center">
+              <div className="card-header">Gráfica de pastel</div>
+              <div className="card-body">
+                <div className="text-center">
+                  {loading ? (
+                    <div className="cardcititita d-flex justify-content-center align-items-center">
+                      <div className="cardcititita_skeleton cardcititita_title"></div>
+                    </div>
+                  ) : (
+                    <div id="chart">
+                      <ReactApexChart
+                        options={chartData.options}
+                        series={chartData.series}
+                        type="pie"
+                      />
+                    </div>
+                  )}
+                </div>
+              </div>
+              <div className="card-footer text-body-secondary">
+                Datos de temperatura
               </div>
             </div>
-            <div className="card-footer text-body-secondary">
-              Datos de temperatura
-            </div>
           </div>
-        </div>
         </center>
         {/* ---------------------------------------------------------------------------------- */}
         <div className="tabla roe-md-6 col-sm-12 mt-5">
